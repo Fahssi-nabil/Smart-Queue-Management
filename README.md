@@ -18,8 +18,8 @@ A full-stack queue management system with real-time updates and analytics.
 ## 📸 Screenshots
 
 ### Admin Dashboard
-![Dashboard](screenshots/admin-dashboard-1)
-![Dashboard](screenshots/admin-dashboard-2)
+![Dashboard](screenshots/admin-dashboard-1.png)
+![Dashboard](screenshots/admin-dashboard-2.png)
 
 ### Queue Management
 ![Queue](screenshots/queue.png)
