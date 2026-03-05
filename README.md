@@ -47,6 +47,11 @@ npm install
 npm run dev
 # Runs on http://localhost:3000
 ```
+### Docker
+
+mvn clean package -DskipTests
+docker-compose down -v
+docker-compose up --build
 
 ## 📝 Default Login
 
