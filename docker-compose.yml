@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  # ===== SMART-Q SERVICE (Spring Boot) =====
+  smart-q-service:
+    build: ./backend/smart-q
+    container_name: smart-q-service
+    ports:
+      - "8084:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://smart-q-db:5432/smartqdb
+      SPRING_DATASOURCE_USERNAME: smartuser
+      SPRING_DATASOURCE_PASSWORD: smartpass
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    depends_on:
+      - smart-q-db
+
+  # ===== SMART-Q DATABASE (PostgreSQL) =====
+  smart-q-db:
+    image: postgres:16
+    container_name: smart-q-db
+    environment:
+      POSTGRES_DB: smartqdb
+      POSTGRES_USER: smartuser
+      POSTGRES_PASSWORD: smartpass
+      
+    ports:
+      - "5433:5432"  # Host 5433 → Container 5432
+    volumes:
+      - smart-q-db-data:/var/lib/postgresql/data
+
+volumes:
+  smart-q-db-data:
