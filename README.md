@@ -48,7 +48,7 @@ npm run dev
 # Runs on http://localhost:3000
 ```
 ### Docker
-
+```bash
 mvn clean package -DskipTests
 docker-compose down -v
 docker-compose up --build
