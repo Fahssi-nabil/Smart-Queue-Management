@@ -18,16 +18,18 @@ A full-stack queue management system with real-time updates and analytics.
 ## 📸 Screenshots
 
 ### Admin Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/admin-dashboard-1)
+![Dashboard](screenshots/admin-dashboard-2)
 
 ### Queue Management
 ![Queue](screenshots/queue.png)
 
 ### Analytics
-![Analytics](screenshots/analytics.png)
+![Analytics](screenshots/analytic-1.png)
+![Analytics](screenshots/analytic-2.png)
 
 ### Customer Ticket View
-![Customer](screenshots/customer.png)
+![Customer](screenshots/customer-ticket.png)
 
 ## 🚀 Quick Start
 
